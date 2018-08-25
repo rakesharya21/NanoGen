@@ -163,6 +163,7 @@ class atom():
             root: which atoms does atom correspond to in adsorption structure, list of atom objects
         """
 
+        self.root = root
         self.mg_atom = mg_atom
         self.symbol = mg_atom.symbol
         self.radius = mg_atom.atomic_radius
@@ -178,7 +179,7 @@ class atom():
         self.ec = exact_coords
         self.ic = ideal_coords
         self.num = num
-        self.root = root
+
 
     def calculate_ec(self):
             root = self.root

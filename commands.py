@@ -2,7 +2,7 @@
 """
 Created on Sat Aug 25 11:54:28 2018
 Commands
-@author: thsim-laptop
+@author: rakesh
 """
 
 def get_unique_atoms(mol):
@@ -31,7 +31,7 @@ def add_ads(layer, ads):
         Each symmetrically unequivalent adsorbed config as a POSCAR
     """
     #add mads to be done later
-    from ads.py import gen_ads_sites
+    from ads import gen_ads_sites
     
     #getting all sites (atoms with roots) from gen_ads_sites
     sites = gen_ads_sites(layer, ads)
